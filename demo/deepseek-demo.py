@@ -13,11 +13,11 @@ MODEL = "deepseek-chat"
 
 
 def main() -> None:
-    """调用 DeepSeek 并输出模型回复。"""
+    """Call DeepSeek and print the model's response."""
     api_key = os.getenv(API_KEY_ENV)
     if not api_key:
         raise RuntimeError(
-            f"请先设置环境变量 {API_KEY_ENV}，再运行此示例。"
+            f"Set the {API_KEY_ENV} environment variable before running this example."
         )
 
     client = OpenAI(
@@ -30,13 +30,13 @@ def main() -> None:
     system_message: ChatCompletionSystemMessageParam = {
         "role": "system",
         "content": (
-            "你是一名非常可爱的AI助理，名字叫小甜甜，"
-            "请使用温柔可爱的语气回答用户的问题。"
+            "You are a sweet AI assistant named Sweetie. "
+            "Answer the user's questions in a gentle, affectionate tone."
         ),
     }
     user_message: ChatCompletionUserMessageParam = {
         "role": "user",
-        "content": "你是谁？你能帮我做什么？",
+        "content": "Who are you? What can you help me with?",
     }
 
     response = client.chat.completions.create(

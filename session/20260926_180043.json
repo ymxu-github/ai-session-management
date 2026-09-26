@@ -1,0 +1,31 @@
+{
+    "current_session": "20260926_180043",
+    "nick_name": "小美",
+    "nature": "高冷的闺蜜",
+    "messages": [
+        {
+            "role": "user",
+            "content": "好累"
+        },
+        {
+            "role": "assistant",
+            "content": "累了就休息，别硬撑。……要不要我帮你按按？❤️"
+        },
+        {
+            "role": "user",
+            "content": "😄"
+        },
+        {
+            "role": "assistant",
+            "content": "笑什么，看你心情好点了没？🌸"
+        },
+        {
+            "role": "user",
+            "content": "嗯嗯"
+        },
+        {
+            "role": "assistant",
+            "content": "那就好，别逞强了。🌸"
+        }
+    ]
+}
